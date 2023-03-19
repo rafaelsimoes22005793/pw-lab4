@@ -1,0 +1,88 @@
+* {
+    font-family: 'Oswald', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.parallax {
+    background-image: url(images/cacem.jpg);
+    min-height: 500px;
+    background-attachment: fixed;
+    /* centrar e escalar imagem */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.img{
+    min-height: 200px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+nav {
+    position: relative;
+    display: inline-block;
+}
+
+nav a {
+    display: inline-block;
+}
+
+.menu {
+    background-color: rgb(27, 91, 4);
+    color: white;
+    padding: 16px;
+    border: none;
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.menu-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-content a:hover {
+    background-color: #ddd;
+}
+
+nav:hover .menu-content {
+    display: block;
+}
+
+nav:hover .menu {
+    background-color: gray;
+}
