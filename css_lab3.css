@@ -1,0 +1,120 @@
+* {font-family: 'Oswald', sans-serif;}
+* {box-sizing: border-box; padding: 0; margin: 0;}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+    background-color: rgb(12, 243, 116);
+    font-size: 2rem;
+}
+
+.foto {
+    position: relative;
+    width: 100%;
+}
+.header{
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aqua;
+    
+}
+
+a:hover{
+    color: gray;
+    font-weight: bold
+}
+
+nav a{
+    padding: 10px;
+    text-decoration: none
+}
+
+header nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.frase{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: black;
+}
+
+.capitais{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: space-around;
+    background-color:bisque;
+    padding: 50px;
+}
+
+.capitais > div{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #888888;
+    margin: 10px;
+}
+
+.capitais img {
+    display: inline-block;
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.capitais div div:last-child {
+    width: 150px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex2>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+    width: 30px;
+    height: 30px;
+    border: 25px solid;
+    border-color: blueviolet;
+    border-radius: 100px;
+    z-index: 1;
+}
+
+.flex2 > div:nth-child(3){
+    border-radius: 0px;
+    z-index: 3;
+}
+
+.imagem img {
+    position: absolute;
+    clip: rect(0px,60px,200px,0px);
+    z-index: 2;
+  }
+
+
+.hide{
+    display: none;
+}  
+
+.visual:hover + .hide{
+    display: block;
+}
